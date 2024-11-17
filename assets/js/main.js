@@ -28,7 +28,7 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
             sonido = "../sounds/Grunido.mp3"; 
             break;
         case "Serpiente":
-            img = "../imgs/Leon.jpg"; 
+            img = "../imgs/Serpiente.jpg"; 
             sonido = "../sounds/Siseo.mp3"; 
             break;
         case "Aguila":
