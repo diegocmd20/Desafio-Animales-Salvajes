@@ -38,6 +38,8 @@ class Animal {
         audio.src = this.sonido;
         audio.play();
     }
+
+    /* función para cambiar imagen de preview */
 }
 
 export class Leon extends Animal {

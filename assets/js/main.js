@@ -5,6 +5,7 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
     const nombre = document.getElementById("animal").value;
     const edad = document.getElementById("edad").value;
     const comentarios = document.getElementById("comentarios").value;
+    let preview = document.getElementById("preview").src;
     let img = "";
     let sonido = "";
 
@@ -17,7 +18,8 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
     switch (nombre) {
         case "Leon":
             img = "../imgs/Leon.png"; 
-            sonido = "../sounds/Rugido.mp3"; 
+            sonido = "../sounds/Rugido.mp3";
+            preview = "url(../imgs/Leon.png)";
             break;
         case "Lobo":
             img = "../imgs/Lobo.jpg"; 
