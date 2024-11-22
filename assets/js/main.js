@@ -5,7 +5,7 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
     const nombre = document.getElementById("animal").value;
     const edad = document.getElementById("edad").value;
     const comentarios = document.getElementById("comentarios").value;
-    let preview = document.getElementById("preview").src;
+    const previewImg = document.getElementById("preview");
     let img = "";
     let sonido = "";
 
@@ -19,23 +19,27 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
         case "Leon":
             img = "../imgs/Leon.png"; 
             sonido = "../sounds/Rugido.mp3";
-            preview = "url(../imgs/Leon.png)";
+            previewImg.style.backgroundImage = "url(assets/images/../imgs/Leon.png)";
             break;
         case "Lobo":
             img = "../imgs/Lobo.jpg"; 
             sonido = "../sounds/Aullido.mp3"; 
+            previewImg.style.backgroundImage = "url(assets/images/../imgs/Lobo.jpg)";
             break;
         case "Oso":
             img = "../imgs/Oso.jpg"; 
             sonido = "../sounds/Grunido.mp3"; 
+            previewImg.style.backgroundImage = "url(assets/images/../imgs/Oso.jpg)";
             break;
         case "Serpiente":
             img = "../imgs/Serpiente.jpg"; 
-            sonido = "../sounds/Siseo.mp3"; 
+            sonido = "../sounds/Siseo.mp3";
+            previewImg.style.backgroundImage = "url(assets/images/../imgs/Serpiente.jpg)"; 
             break;
         case "Aguila":
             img = "../imgs/Aguila.png"; 
-            sonido = "../sounds/Chillido.mp3"; 
+            sonido = "../sounds/Chillido.mp3";
+            previewImg.style.backgroundImage = "url(assets/images/../imgs/Aguila.png)";
             break;
         default:
             return;
