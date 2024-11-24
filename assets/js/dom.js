@@ -46,11 +46,11 @@ export function agregarAnimalATabla(animal) {
 export function mostrarModal(animal) {
     const modalBody = document.querySelector("#exampleModal .modal-body");
     modalBody.innerHTML = `
-        <img src="${animal.img}" alt="${animal.nombre}"/>
-        <p class="fw-semibold">${animal.edad}</p>
+        <img class="w-50" src="assets/images/${animal.img}" alt="${animal.nombre}"/>
+        <p class="fw-semibold my-1">${animal.edad}</p>
         <h6 class="fw-bold">Comemntarios</h6>
         <p>${animal.comentarios}</p>
-    `;
+        `;
     const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
     modal.show();
 }
