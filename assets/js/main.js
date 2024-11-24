@@ -1,5 +1,5 @@
 import { Leon, Lobo, Oso, Serpiente, Aguila } from '../js/animal.js';
-import { agregarAnimalATabla, mostrarModal } from '../js/dom.js';
+import { agregarAnimalATabla } from '../js/dom.js';
 
 document.getElementById("btnRegistrar").addEventListener("click", function() {
     const nombre = document.getElementById("animal").value;
@@ -18,27 +18,27 @@ document.getElementById("btnRegistrar").addEventListener("click", function() {
     switch (nombre) {
         case "Leon":
             img = "../imgs/Leon.png"; 
-            sonido = "../sounds/Rugido.mp3";
+            sonido = "assets/sounds/../sounds/Rugido.mp3";
             previewImg.style.backgroundImage = "url(assets/images/../imgs/Leon.png)";
             break;
         case "Lobo":
             img = "../imgs/Lobo.jpg"; 
-            sonido = "../sounds/Aullido.mp3"; 
+            sonido = "assets/sounds/../sounds/Aullido.mp3"; 
             previewImg.style.backgroundImage = "url(assets/images/../imgs/Lobo.jpg)";
             break;
         case "Oso":
             img = "../imgs/Oso.jpg"; 
-            sonido = "../sounds/Grunido.mp3"; 
+            sonido = "assets/sounds/../sounds/Grunido.mp3"; 
             previewImg.style.backgroundImage = "url(assets/images/../imgs/Oso.jpg)";
             break;
         case "Serpiente":
             img = "../imgs/Serpiente.jpg"; 
-            sonido = "../sounds/Siseo.mp3";
+            sonido = "assets/sounds/../sounds/Siseo.mp3";
             previewImg.style.backgroundImage = "url(assets/images/../imgs/Serpiente.jpg)"; 
             break;
         case "Aguila":
             img = "../imgs/Aguila.png"; 
-            sonido = "../sounds/Chillido.mp3";
+            sonido = "assets/sounds/../sounds/Chillido.mp3";
             previewImg.style.backgroundImage = "url(assets/images/../imgs/Aguila.png)";
             break;
         default:

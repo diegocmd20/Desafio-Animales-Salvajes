@@ -26,13 +26,11 @@ export function agregarAnimalATabla(animal) {
     imgFooter.style.height = ("auto");
     imgFooter.style.width = ("1.5rem");
     imgFooter.alt = ("audio-icon");
-    imgFooter.id = ("botonReproducir")
+    imgFooter.id = ("botonReproducir");
 
-    imgFooter.addEventListener("click", function(animal){
-        imgFooter.innerHTML = `
-        <audio src="${animal.audio}"></audio>
-        `;
-    });
+    imgFooter.addEventListener('click', function (){ 
+        animal.reproducirSonido();
+    })
 
     body.appendChild(title);
     card.appendChild(img);
