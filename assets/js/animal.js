@@ -1,4 +1,3 @@
-/* Función Autoejecutable que llame al DOM */
 
 class Animal {
     constructor(nombre, edad, img, comentarios, sonido) {

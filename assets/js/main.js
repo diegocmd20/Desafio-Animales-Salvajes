@@ -1,6 +1,11 @@
 import { Leon, Lobo, Oso, Serpiente, Aguila } from '../js/animal.js';
 import { agregarAnimalATabla } from '../js/dom.js';
 
+(function() {
+    console.log("La página ha sido cargada.");
+})();
+
+
 document.getElementById("btnRegistrar").addEventListener("click", function() {
     const nombre = document.getElementById("animal").value;
     const edad = document.getElementById("edad").value;
