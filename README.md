@@ -1,19 +1,32 @@
 # Desafío Animales Salvajes
 
-**Objetivo:** Implementar 
+**Objetivo:** Implementar los conocimientos de JavaScript Orientado a Objetos.
 
 📍 Puedes visualizar tu proyecto haciendo click aquí: https://desafio-animales-salvajes.vercel.app/
+
 
 ## Descripción:
 
 1. HTML:
 
-   - Navbar
-   - Formulario con un input `type="number"` para buscar nuestros héroes por id.
+   - Implementación de Framework CSS Bootstrap.
+   - Formulario con `<select>` para eligir animales y su edad.
+   - Sección de `<textarea>` para escribir comentarios.
+   - Imagen dinámica.
+   - Creación de Tarjeta de forma interactiva
 
-2. JavaScript / jQuery:
+2. `animal.js` :
 
-   - Validación del tipo de dato ingresado en el `<input>`
-   - Llamada a la API mediante Ajax condicionando que si la respuesta es favorable ejecute las funciones `cardLoaded(data)` y `chartLoaded(data)` en caso contrario con una alerta declarando qué llamada tuvo un error.
-   - Función `cardLoaded(data)` que renderiza como card los datos solicitados del héroe mediante el método `.html()`. 
-   - Función `cardLoaded(data)` que renderiza la gráfica con las estadísticas del superhéroe consultado teniendo de referencia la librería CanvaJS.
+   - Clases con Herencias para cada animal que tenga como características: *nombre*, *edad*, *imagen*, *comentarios* y *sonido*.
+   - Función `reproducirSonido()` para reproducir el Sonido del Animal seleccionado.
+
+3. `dom.js` :
+
+   - Creación de Tarjeta con los datos de cada Animal
+   - Creación de Modal para cada Animal
+
+4. `main.js` :
+
+   - Exportación de Clases y Funciones de `animal.js` y `dom.js`.
+   - Función Autoejecutable que muestra un `console.log`.
+   - Función que cambia el DOM del formulario con el animal seleccionado.
