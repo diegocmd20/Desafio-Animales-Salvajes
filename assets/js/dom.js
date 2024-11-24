@@ -25,6 +25,14 @@ export function agregarAnimalATabla(animal) {
     imgFooter.src = "assets/images/../imgs/audio.svg";
     imgFooter.style.height = ("auto");
     imgFooter.style.width = ("1.5rem");
+    imgFooter.alt = ("audio-icon");
+    imgFooter.id = ("botonReproducir")
+
+    imgFooter.addEventListener("click", function(animal){
+        imgFooter.innerHTML = `
+        <audio src="${animal.audio}"></audio>
+        `;
+    });
 
     body.appendChild(title);
     card.appendChild(img);
@@ -38,13 +46,10 @@ export function agregarAnimalATabla(animal) {
 export function mostrarModal(animal) {
     const modalBody = document.querySelector("#exampleModal .modal-body");
     modalBody.innerHTML = `
-        <h5>Nombre: ${animal.nombre}</h5>
-        <p>Edad: ${animal.edad}</p>
-        <p>Comentarios: ${animal.comentarios}</p>
-        <audio controls>
-            <source src="assets/sounds/${animal.sonido}" type="audio/mp3">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
+        <img src="${animal.img}" alt="${animal.nombre}"/>
+        <p class="fw-semibold">${animal.edad}</p>
+        <h6 class="fw-bold">Comemntarios</h6>
+        <p>${animal.comentarios}</p>
     `;
     const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
     modal.show();
